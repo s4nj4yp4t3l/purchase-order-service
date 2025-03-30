@@ -66,7 +66,7 @@ not be blocked. Our API would be making intensive calls to a database if there w
 is better to make our API endpoints and the methods connected to it in the chain asynchronous. Any calling code
 in the UI can call our endpoint using the "HttpClientFactory" asynchronously as well.
 
-### Net changes to .NET 9.0
+### New changes to .NET 9.0
 
 I've written the solution in .NET 9.0, the latest version at the time of writing. I've also used a minimal API rather than
 the controller-based option. Minimal APIs are generally faster than Controller APIs because they have less overhead, 
