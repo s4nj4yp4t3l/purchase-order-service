@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Concrete\CustomerService.cs" />
+    <Compile Remove="Concrete\ItemService.cs" />
+    <Compile Remove="Endpoints\CustomerEndpoints.cs" />
+    <Compile Remove="Endpoints\ItemEndpoints.cs" />
+    <Compile Remove="Interfaces\ICustomerService.cs" />
+    <Compile Remove="Interfaces\IItemService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PurchaseOrder.Models\PurchaseOrder.Models.csproj" />
+    <ProjectReference Include="..\PurchaseOrder.Repository\PurchaseOrder.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

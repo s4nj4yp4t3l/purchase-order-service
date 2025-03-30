@@ -1,0 +1,32 @@
+@PurchaseOrder.Api_HostAddress = http://localhost:5141
+
+GET {{PurchaseOrder.Api_HostAddress}}/api/health
+Accept: application/json
+
+###
+
+GET {{PurchaseOrder.Api_HostAddress}}/api/purchaseorder/1
+Accept: application/json
+
+###
+
+POST {{PurchaseOrder.Api_HostAddress}}/api/purchaseorder
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": 1,
+  "items": [
+    {
+      "id": 1,
+      "title": "Book Club Membership",
+      "price": 1.11,
+      "isPhysicalItem": false
+    },
+    {
+      "id": 2,
+      "title": "Aliens - Special Edition",
+      "price": 3.33,
+      "isPhysicalItem": true
+    }
+  ]
+}
