@@ -1,4 +1,4 @@
-# FunBooksAndVideos e-commerce shop
+# Sample e-commerce shop
 
 ## Datasource
 
