@@ -90,7 +90,7 @@ practices. I've detailed in the "ProcessPurchaseOrderAsync" method in the "Purch
 
 A microservice should be entirely independent from other microservices and individually deployable. Now I'd assume that
 the doamin for this "purchase-order-service" microservice is "orders" which deal's with everything order 
-related. That is why is only has the endpoints in "PurchaseOrderEndpoints.cs". To communicate across domains we use
+related. That is why it only has the endpoints in "PurchaseOrderEndpoints.cs". To communicate across domains we use
 Service Buses. We talk to the "customer" domain to update a customer's membership or talk to the "shipping" domain
 to send out shipping-slips. We'd do this via messages in queues. This means different parts of the overall system 
 (the domains) are loosly coupled meaning a more independent, scalable system.
