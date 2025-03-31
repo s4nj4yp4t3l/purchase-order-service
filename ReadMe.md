@@ -10,7 +10,7 @@ hard coded data. By doing this, the data isn't 100% correct, but this isn't a re
 To test the services, to help, I've put some examples in the "PurchaseOrder.Api.http" file, which is part of the 
 "PurchaseOrder.Api" project.
 
-Some sample data can be found in "PurchaseOrder.Data" project in the "SampleData.cs" file.
+Some sample data can be found in the "PurchaseOrder.Data" project in the "SampleData.cs" file.
 
 This way you can see the data that can be used to make successful / unsuccessful calls to the "ProcessPurchaseOrderAsync" 
 HTTP POST route of "/api/purchaseorder".
@@ -39,7 +39,7 @@ This is a purchase order API, so the solution is called "purchase-order-service"
 solution folders, "Api", "Common", "Test" for clarity. We have the single API project named after
 what the API does, so "PurchaseOrder.Api" - purchase order being what part of the solution name is. 
 Then we have the class library projects "PurchaseOrder.Models", "PurchaseOrder.Repository" and "PurchaseOrder.Data". 
-If the models project if shared between other solution it could be a NuGet package instead. If we had a domain
+If the models project is shared between other solutions it could be a NuGet package instead. If we had a domain
 project "PurchaseOrder.Domain" it would hold the functionality for database interaction separately. If (and I haven't 
 done this as i've hard coded the data) I was connecting to a database, say using Entity Framework Core, then I would
 have a "PurchaseOrder.Domain" project that would contain a "ProcessOrderContext" class inheriting the 
