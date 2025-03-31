@@ -48,7 +48,7 @@ my data source as mentioned before, there is no database in this solution.
 
 Finally, we have the test projects. There is one for each other project in the solution, so 
 "PurchaseOrder.Api.UnitTests", "PurchaseOrder.Repository.UnitTests". The "PurchaseOrder.Models" doesn't need code 
-coverage as its just POCO's.
+a separate test project as the POCO's are covered when we access methods that use them in other test projects.
 
 Each unit test project is named the same as the project it is applying tests to, with the suffix ".UnitTests". 
 Also, tests are called after the class they are targeting with the suffix "Tests", e.g. for "PurchaseOrderService.cs" 
