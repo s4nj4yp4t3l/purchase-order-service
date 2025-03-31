@@ -1,4 +1,4 @@
-# FunBooksAndVideos e-commerce shop - Shawbrook Bank
+# FunBooksAndVideos e-commerce shop
 
 ## Datasource
 
